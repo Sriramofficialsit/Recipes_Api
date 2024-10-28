@@ -25,6 +25,12 @@ async function main(){
     }
 }
 
+Recipes_App.get("/",function(request,response){
+    return response.status(200).json({
+        message:"API IS LIVE NOW",
+        success:true
+    })
+})
 
 Recipes_App.listen(process.env.PORT,process.env.HOSTNAME,function(){
     console.log(`Server started http://${process.env.HOSTNAME}:${process.env.PORT}`);
