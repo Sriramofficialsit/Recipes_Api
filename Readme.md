@@ -41,28 +41,14 @@ Run the Application:
 npm start
 
 
-File Structure:
-===============
-/recipes-app
-|-- /controllers
-|   |-- createRecipe.controller.js
-|   |-- deleteRecipe.controller.js
-|   |-- getAllRecipes.controller.js
-|   |-- updateRecipe.controller.js
-|
-|-- /models
-|   |-- Recipe.model.js
-|
-|-- .env
-|-- index.js
-|-- package.json
 
 
-Key Files
-index.js: The main entry point of the application where the Express server is set up. It connects to the MongoDB database and configures the application to listen on the specified port.
+Key Files:
+==========
+index.js: The main entry point of the application where the Express server is set up.
+It connects to the MongoDB database and configures the application to listen on the specified port.
 
 /controllers: Contains the logic for handling API requests for creating, reading, updating, and deleting recipes.
-
 createRecipe.controller.js: Handles the creation of new recipes.
 getAllRecipes.controller.js: Retrieves all recipes and individual recipes by ID.
 updateRecipe.controller.js: Updates existing recipe details.
