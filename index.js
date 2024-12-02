@@ -15,7 +15,7 @@ Recipes_App.use("/updateRecipe",updateRecipe);
 Recipes_App.use("/deleteRecipe",deleteRecipe);
 
 async function main(){
-    const mongodb_uri = "mongodb://127.0.0.1:27017/recipes"; 
+    const mongodb_uri = process.env.MONGODB_URI;
     try{
         await mongoose.connect(mongodb_uri);
         console.log("Connected to DB");
